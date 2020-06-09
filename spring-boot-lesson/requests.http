@@ -1,0 +1,54 @@
+GET http://localhost:8080/mvc-app/api/v1/user/all
+Authorization: Basic mem_user password
+###
+
+POST http://localhost:8080/mvc-app/api/v1/user
+Content-Type: application/json
+
+{
+  "name": "Kiril 2",
+  "password": "123456789",
+  "repeatPassword": null,
+  "email": "adasd777@sdasd.er",
+  "age": 29
+}
+
+###
+
+DELETE http://localhost:8080/mvc-app/api/v1/user/12/id
+
+###
+
+# curl 'http://localhost:8080/mvc-app/api/v1/user/3/id'
+#  -H 'Connection: keep-alive'
+#  -H 'Cache-Control: max-age=0'
+#  -H 'sec-ch-ua: "\\Not\"A;Brand";v="99", "Chromium";v="84", "Google Chrome";v="84"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'Upgrade-Insecure-Requests: 1'
+#  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.30 Safari/537.36'
+#  -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+#  -H 'Sec-Fetch-Site: none'
+#  -H 'Sec-Fetch-Mode: navigate'
+#  -H 'Sec-Fetch-User: ?1'
+#  -H 'Sec-Fetch-Dest: document'
+#  -H 'Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,he;q=0.6,de;q=0.5,cs;q=0.4'
+#  -H 'Cookie: Idea-9b48f7af=17892575-c317-4702-89b0-a017a29f817f; _ga=GA1.1.394553993.1563472197; Idea-9b48f7b0=17892575-c317-4702-89b0-a017a29f817f; Idea-9b48f7b1=71b919b1-85ca-45fe-810f-6c239595e31b; Idea-93a33157=0ebc0518-b0d9-4337-b91d-0f492b74e30a; location=%7B%22type%22%3A%22city%22%2C%22id%22%3A1%2C%22name%22%3A%22%5Cu041c%5Cu043e%5Cu0441%5Cu043a%5Cu0432%5Cu0430%22%7D; location_confirmed=1; suggest_role_modal_shown=1'
+#  --compressed
+GET http://localhost:8080/mvc-app/api/v1/user/3/id
+Connection: keep-alive
+Cache-Control: max-age=0
+sec-ch-ua: "Not"A;Brand";v="99", "Chromium";v="84", "Google Chrome";v="84"
+sec-ch-ua-mobile: ?0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.30 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,he;q=0.6,de;q=0.5,cs;q=0.4
+Cookie: Idea-9b48f7af=17892575-c317-4702-89b0-a017a29f817f; _ga=GA1.1.394553993.1563472197; Idea-9b48f7b0=17892575-c317-4702-89b0-a017a29f817f; Idea-9b48f7b1=71b919b1-85ca-45fe-810f-6c239595e31b; Idea-93a33157=0ebc0518-b0d9-4337-b91d-0f492b74e30a; location=%7B%22type%22%3A%22city%22%2C%22id%22%3A1%2C%22name%22%3A%22%5Cu041c%5Cu043e%5Cu0441%5Cu043a%5Cu0432%5Cu0430%22%7D; location_confirmed=1; suggest_role_modal_shown=1
+
+###
+
+
